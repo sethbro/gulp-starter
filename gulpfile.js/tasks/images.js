@@ -9,5 +9,5 @@ gulp.task('images', function() {
     .pipe(changed(config.dest)) // Ignore unchanged files
     .pipe(imagemin()) // Optimize
     .pipe(gulp.dest(config.dest))
-    .pipe(browserSync.reload({stream:true}));
+    .pipe(browserSync.reload({ stream:true }));
 });
